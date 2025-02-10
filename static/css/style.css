@@ -351,6 +351,14 @@ p {
     .tokenomics-grid {
         grid-template-columns: 1fr;
     }
+    
+    #about p {
+        font-size: 0.9rem; /* Mobilda shriftni biroz kichikroq qilish */
+        line-height: 1.5; /* Qatorlar orasidagi masofani kamaytirish */
+        max-width: 100%; /* Mobilda to'liq kenglikni egallash */
+        padding: 0 10px; /* Mobilda chetlar bo'yicha paddingni kamaytirish */
+        overflow-wrap: break-word; /* Uzun so'zlarni avtomatik ravishda qatorlarga bo'lish */
+    }
 }
 
 
