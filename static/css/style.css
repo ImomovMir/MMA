@@ -216,7 +216,7 @@ p {
 }
 
 h1 {
-    font-size: 2rem; /* Katta sarlavha */
+    font-size: 2.1rem; /* Katta sarlavha */
     font-family: "Audiowide", sans-serif; /* Futuristik shrift */
     color: #ff007f; /* Neon pushti rang */
     text-transform: uppercase; /* Katta harflar */
@@ -328,7 +328,7 @@ p {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -342,7 +342,7 @@ p {
 /* Mobil qurilmalar uchun moslashtirilgan CSS */
 @media (max-width: 768px) {
     .home h1 {
-        font-size: 0.1rem;
+        font-size: 2rem;
         max-width: 50%; /* Elementning kengligini cheklash */
         padding: 0 10px; /* Chetlar bo'yicha padding qo'shish */
         word-wrap: break-word;
