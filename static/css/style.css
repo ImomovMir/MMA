@@ -342,8 +342,8 @@ p {
 /* Mobil qurilmalar uchun moslashtirilgan CSS */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 1rem;
-        max-width: 100%; /* Elementning kengligini cheklash */
+        font-size: 0.1rem;
+        max-width: 500%; /* Elementning kengligini cheklash */
         padding: 0 10px; /* Chetlar bo'yicha padding qo'shish */
     }
     .hero p {
