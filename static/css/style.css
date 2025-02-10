@@ -342,7 +342,7 @@ p {
 /* Mobil qurilmalar uchun moslashtirilgan CSS */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 1rem;
+        font-size: 0.4rem;
     }
     .hero p {
         font-size: 1rem;
