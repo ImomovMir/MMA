@@ -97,102 +97,6 @@ body {
     box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0040;
 }
 
-/* 🔥 Mobil dizayn (responsiv) */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-    .navbar {
-    flex-direction: column;
-    text-align: center;
-    }
-    
-
-    .navbar a {
-        display: block;
-        padding: 10px;
-    }
-
-    .main {
-        padding: 30px 10px;
-    }
-    
-    .main p {
-        font-size: 1rem;
-    }
-
-    .main h1 {
-        font-size: 1.5rem;
-    }
-
-    .nav-links a {
-        font-size: 1rem;
-    }
-    
-    .button {
-        padding: 8px 15px;
-    }
-
-    p {
-        font-size: 1rem;
-        line-height: 1.4;
-        padding: 0 10px;
-    }
-
-    .footer {
-        font-size: 0.8rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    .token-box {
-        padding: 1rem;
-        border-radius: 15px;
-    }
-
-    .tokenomics-grid {
-        flex-direction: column;
-        gap: 1.5rem;
-        max-width: 90%;
-    }
-
-    h1 {
-        font-size: 2rem;
-        letter-spacing: 2px;
-        text-shadow: 0 0 5px #ff007f, 0 0 10px #ff00ff;
-    }
-    
-    h2 {
-        font-size: 1.8rem;
-        text-shadow: 0 0 3px #0ff, 0 0 7px #00f;
-        letter-spacing: 2px;
-    }
-
-    .social-buttons {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .contract-box {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        padding: 1rem;
-        max-width: 90%;
-        border-radius: 20px;
-    }
-
-    .button {
-        padding: 8px 15px;
-    }
-}
-
-
-
 /* Section styling */
 section {
     padding: 100px 20px;
@@ -332,25 +236,6 @@ section {
     width: 60%;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-
-    .contract-box {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .social-buttons {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-
 
 .background-video {
     position: fixed; /* Skroll qilinganda joyida qoladi */
@@ -370,17 +255,6 @@ section {
     height: 100vh;
     background: rgba(0, 0, 0, 0.5); /* Yarim shaffof qora */
     z-index: 0; /* Matn videoning ustida chiqishi uchun */
-}
-
-
-@media (max-width: 768px) {
-    .contract-box {
-        flex-direction: column; /* Mobil ekranda ustma-ust bo‘lishi */
-        gap: 1rem; /* Masofani yanada kichraytirish */
-        padding: 1rem;
-        max-width: 90%; /* Ekran bo‘ylab yaxshi moslashishi */
-        border-radius: 20px;
-    }
 }
 
 
@@ -421,22 +295,6 @@ p {
     }
 }
 
-
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.8rem; /* Telefon uchun kichikroq sarlavha */
-        text-shadow: 0 0 3px #0ff, 0 0 7px #00f; /* Neon effektni kamaytirish */
-        letter-spacing: 2px;
-    }
-
-    p {
-        font-size: 1rem; /* Matnni kichikroq qilish */
-        line-height: 1.4;
-        padding: 0 10px; /* Yonlardan joy qoldirish */
-    }
-}
-
-
 h1 {
     font-size: 3rem; /* Katta sarlavha */
     font-family: "Audiowide", sans-serif; /* Futuristik shrift */
@@ -466,17 +324,6 @@ h1 {
             0 0 10px #ff007f, 
             0 0 20px #ff00ff, 
             0 0 30px #ff007f;
-    }
-}
-
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Mobil uchun kichikroq */
-        letter-spacing: 2px;
-        text-shadow: 
-            0 0 5px #ff007f, 
-            0 0 10px #ff00ff;
     }
 }
 
@@ -550,4 +397,92 @@ p {
     font-family: "Orbitron", sans-serif;
     text-shadow: 0 0 5px #0ff, 0 0 10px #00f;
     z-index: 1000;
+}
+
+
+/* Mobil qurilmalar uchun moslashtirilgan CSS */
+@media (max-width: 468px) {
+    /* Navbar linklarini kichikroq qilish */
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: 5px;
+    }
+
+    /* Hero qismdagi matn va tugmalar */
+    .contract-box {
+        flex-direction: column;
+        padding: 1.5rem;
+        max-width: 90%;
+        margin-top: 2rem;
+    }
+
+    .copy-btn {
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+
+    /* Sektsiyalar uchun padding */
+    section {
+        padding: 50px 15px;
+    }
+
+    /* H1 va H2 o'lchamlarini moslashtirish */
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+
+    /* Social tugmalarni moslashtirish */
+    .social-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .social-btn {
+        width: 90%;
+        justify-content: center;
+        padding: 0.7rem;
+    }
+
+    /* Tokenomics qismidagi grid */
+    .tokenomics-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .token-box {
+        padding: 1rem;
+    }
+
+    /* Footerni kichikroq qilish */
+    .footer {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+
+    /* Videofonni moslashtirish */
+    .background-video {
+        height: 100vh;
+    }
 }
