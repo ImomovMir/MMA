@@ -7,7 +7,7 @@
     <title>Your Token Name</title>
 
     <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="https://imomovmir.github.io/MMA/static/css/style.css">>
+    <link rel="stylesheet" href="https://imomovmir.github.io/MMA/static/css/style.css">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -41,6 +41,36 @@
             </a>
         </div>
     </section>
+
+    <script>
+        // Contract address copy function
+        function copyAddress() {
+            const address = document.getElementById('contractAddress').innerText;
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(address).then(function() {
+                    console.log("Copied to clipboard!");
+                }).catch(function(err) {
+                    console.error("Failed to copy: ", err);
+                });
+            } else {
+                // Eski usul (textarea yordamida)
+                const textarea = document.createElement("textarea");
+                textarea.value = address;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textarea);
+                console.log("Copied to clipboard!");
+            }
+
+            // Temporarily change the button text to "Copied!"
+            const btn = document.querySelector('.copy-btn');
+            btn.innerText = 'Copied!';
+            setTimeout(() => {
+                btn.innerText = 'Copy CA';
+            }, 2000);
+        }
+    </script>
 
     <!-- About Section -->
     <section id="about">
