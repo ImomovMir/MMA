@@ -232,22 +232,6 @@ h1 {
 }
 
 
-.bg-image {
-    position: absolute; /* Rasmni orqa fon qilish */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Rasmni ekran o‘lchamiga mos qilish */
-    z-index: -1; /* Matnni rasm ustiga chiqishi uchun */
-}
-#about {
-    position: relative;
-    color: white; /* Matn rangini oq qilish */
-    padding: 100px 20px;
-    text-align: center;
-}
-
 
 /* Neon yaltirash animatsiyasi */
 @keyframes neonGlow {
