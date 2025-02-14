@@ -326,7 +326,7 @@ p {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background: url('/static/img/background.jpg') no-repeat center center/cover;
+    background: url('https://wagmiai.site/staticfiles/img/background.jpg') no-repeat center center/cover;
 }
 
 .hero h1 {
