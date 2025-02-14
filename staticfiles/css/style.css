@@ -364,6 +364,17 @@ p {
         padding: 0 10px; /* Mobilda chetlar bo'yicha paddingni kamaytirish */
         overflow-wrap: break-word; /* Uzun so'zlarni avtomatik ravishda qatorlarga bo'lish */
     }
+
+    .contract-box {
+        padding: 1rem; /* Mobil qurilmalar uchun kichikroq padding */
+        flex-direction: column; /* Elementlarni vertikal joylashtirish */
+        gap: 1rem; /* Ichki masofani kamaytirish */
+        max-width: 90%; /* Kenglikni ekranga moslashtirish */
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon yoritishni biroz kamaytirish */
+        animation: flicker 2s infinite alternate; /* Animatsiyani biroz sekinlashtirish */
+    }
+
+    
 }
 
 
